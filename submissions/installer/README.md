@@ -1,6 +1,6 @@
 # 🦆 Rubber Ducky Installer
 
-**Author**: Aarav J  
+**Author**: Tim S
 **Payload**: Windows PowerShell intaller 
 **Use**: For testing and educational use only.
 

